@@ -26,6 +26,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('message', mes => {
     let message = mes.content;
+    console.log(mes.member.guild.name+" ("+mes.channel.name+") --- "+mes.author.username+": "+message);
     if(mes.author.username !== "Olympo"){
         fs.appendFile("log.txt", mes.member.guild.name+" ("+mes.channel.name+") --- "+mes.author.username+": "+message+"\n");
     }
