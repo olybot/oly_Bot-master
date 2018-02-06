@@ -49,6 +49,11 @@ client.on('message', mes => {
             file: src
         }).then(success => {console.log("imagen enviada")}, error => {console.log("error")});
     }
+    
+    if(message === "!sendmyfiles"){
+        uploadFile("trivial/trivial_scores.json");
+        uploadFile("log.txt");
+    }
 
 
     if(message === "!trivial start"){
