@@ -16,8 +16,9 @@ client.on("ready", () => {
     console.log("Jenkins is Running 2.0");
     client.user.setActivity("Pídeme !ayuda");
 });
-client.login("MjY4MTA5NjQ0MTA5NDQ3MTY5.DUPfeA.5d4JKPeWhv_1KnXA-I8ihOOWm0w");
+client.login(process.env.BOT_TOKEN);
 
+// Jenkins: MjY4MTA5NjQ0MTA5NDQ3MTY5.DUPfeA.5d4JKPeWhv_1KnXA-I8ihOOWm0w
 // Olympo: MzgwNzgyNzA4OTg2NjA5Njgx.DRLp-g.8Kn9VYBaKPviTAu8ICY4GwGUDe4
 // process.env.BOT_TOKEN
 
@@ -190,9 +191,9 @@ client.on('message', mes => {
         messageToChannel("pong");
     }
 
-    if(message === "vete"){
-        client.destroy();
-    }
+//     if(message === "vete"){
+//         client.destroy();
+//     }
 
     if (message.startsWith("!lyrics")) {
         // !lyrics "author" "song"
