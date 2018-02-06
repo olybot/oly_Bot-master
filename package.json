@@ -1,0 +1,43 @@
+{
+  "name": "thomse",
+  "version": "1.2",
+  "engines": {
+    "node": "8.1.1"
+  },
+  "description": "Bot for Discord, by Th0ms3 Jenkins",
+  "main": "Olympo.js",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "genius-api": "^0.3.0",
+    "git": "^0.1.5",
+    "jquery": "^3.1.1",
+    "lets-get-meta": "^2.1.1",
+    "lyricist": "^2.2.2",
+    "lyrics-fetcher": "^1.0.2",
+    "musicmatch": "^0.2.5",
+    "request-promise": "^4.2.2",
+    "scrape-it": "^3.3.3",
+    "twit": "^2.2.5",
+    "unfluff": "^1.1.0",
+    "webshot": "^0.18.0",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.3.0",
+    "noodlejs": "^0.3.2",
+    "osmosis": "^1.1.4",
+    "request": "^2.83.0",
+    "scrape-it": "^3.3.3",
+    "sync-request": "^4.1.0",
+    "then-request": "^4.1.0"
+  },
+  "scripts": {
+    "start": "node Olympo.js"
+  },
+  "author": "th0ms3 jenkins",
+  "license": "ISC"
+}
