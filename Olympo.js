@@ -86,6 +86,7 @@ client.on('message', mes => {
             array.push(json[i]);
         }
         array.sort(GetSortOrder("puntos"));
+        array.reverse();
         for(let item in array){
             if(cont === 1){
                 rankingString += ":first_place: 1. ";
