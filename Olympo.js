@@ -89,13 +89,13 @@ client.on('message', mes => {
         array.reverse();
         for(let item in array){
             if(cont === 1){
-                rankingString += ":first_place: 1. ";
+                rankingString += ":first_place: ";
             }
             else if(cont === 2){
-                rankingString += ":second_place: 2. ";
+                rankingString += ":second_place: ";
             }
             else if(cont === 3){
-                rankingString += ":third_place: 3. ";
+                rankingString += ":third_place: ";
             }
             else if(cont === 4){
                 rankingString += "4. ";
@@ -126,34 +126,34 @@ client.on('message', mes => {
         }
         rankingString += "\n\n\n**Ranking del servidor:**\n\n";
         for(let item in array){
-            if(cont2 === 1){
-                rankingString += ":first_place: 1. ";
+            if((cont2 === 1) && (mes.channel.guild.id === array[item].serverID)){
+                rankingString += ":first_place: ";
             }
-            else if(cont2 === 2){
-                rankingString += ":second_place: 2. ";
+            else if((cont2 === 2) && (mes.channel.guild.id === array[item].serverID)){
+                rankingString += ":second_place: ";
             }
-            else if(cont2 === 3){
-                rankingString += ":third_place: 3. ";
+            else if((cont2 === 3) && (mes.channel.guild.id === array[item].serverID)){
+                rankingString += ":third_place: ";
             }
-            else if(cont2 === 4){
+            else if((cont2 === 4) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "4. ";
             }
-            else if(cont2 === 5){
+            else if((cont2 === 5) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "5. ";
             }
-            else if(cont2 === 6){
+            else if((cont2 === 6) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "6. ";
             }
-            else if(cont2 === 7){
+            else if((cont2 === 7) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "7. ";
             }
-            else if(cont2 === 8){
+            else if((cont2 === 8) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "8. ";
             }
-            else if(cont2 === 9){
+            else if((cont2 === 9) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "9. ";
             }
-            else if(cont2 === 10){
+            else if((cont2 === 10) && (mes.channel.guild.id === array[item].serverID)){
                 rankingString += "10. ";
             }
             else if(cont2 > 10){
